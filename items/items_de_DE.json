@@ -9368,6 +9368,7 @@
         "id": 4174,
         "blizId": "Unique_Gloves_014_x1",
         "name": "Magierfaust",
+        "cube": true,
         "cubeCategory": "Armor",
         "type": {
             "twoHanded": false,
@@ -9381,7 +9382,8 @@
         "requiredLevel": 31,
         "slots": [
             "hands"
-        ]
+        ],
+        "passive": "Feuerfertigkeiten verursachen um 20% erhöhten Schaden."
     },
     {
         "id": 4175,

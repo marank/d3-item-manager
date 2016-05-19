@@ -19,10 +19,11 @@
             controllerAs:     'vm'
         };
 
-        function controller() {
+        function controller(locales) {
             var vm = this; // jshint ignore:line
             vm.clear = clear;
             vm.showClear = showClear;
+            vm.t = locales.t;
 
             function clear() {
                 vm.filterValue = '';

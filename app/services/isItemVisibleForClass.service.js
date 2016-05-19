@@ -8,7 +8,7 @@
         var itemTypeClass;
         var isLoaded = false;
 
-        $http.get('items/itemTypeClass.json?' + Date.now()).
+        $http.get('items/itemTypeClass.json', {cache: true}).
             then(function(result) {
                 itemTypeClass = result.data;
                 isLoaded = true;

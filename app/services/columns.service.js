@@ -7,8 +7,8 @@
 
     // TODO: add cubed to array
 
-    function columns(config) {
-        var _all = config.getItem(keyAll, ['Stashed']);
+    function columns(config, locales) {
+        var _all = config.getItem(keyAll, [locales.t('general.stashed')]);
 
         return {
             remove,
@@ -18,7 +18,7 @@
         };
 
         function reallyAll(){
-            return _.flatten(['Cubed', all()]);
+            return _.flatten([locales.t('general.cubed'), all()]);
         }
 
         function all() {

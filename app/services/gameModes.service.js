@@ -50,7 +50,7 @@
         }
 
         function save() {
-            config.setItem(keyAll, JSON.stringify(_all));
+            config.setItem(keyAll, _all);
         }
     }
 

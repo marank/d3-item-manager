@@ -18,6 +18,9 @@
     "json": [
       "items/*.json"
     ],
+    "lang": [
+      "lang/*.json"
+    ],
     "less": [
       "app/**/*.less"
     ],

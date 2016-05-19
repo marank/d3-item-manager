@@ -122,7 +122,7 @@
                         artisan = 'artisan/blacksmith/';
                 }
             }
-            var locale = locales.currentItemLanguage();
+            var locale = locales.currentLocale();
             return `http://${locale.region}.battle.net/d3/${locale.short}/${artisan}${item.tooltipParams}`;
         }
 

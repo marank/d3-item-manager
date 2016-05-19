@@ -13,15 +13,16 @@
             controller
         };
 
-        function controller($location, config) {
+        function controller($location, config, locales) {
             var vm = this; // jshint ignore:line
 
             vm.itemLanguageNotConfigured = itemLanguageNotConfigured;
             vm.showConfig = showConfig;
             vm.setDefaultItemLanguage = setDefaultItemLanguage;
+            vm.t = locales.t;
 
             function itemLanguageNotConfigured() {
-                return !config.isSet('itemLanguage');
+                return !config.isSet('locale');
             }
 
             function showConfig() {
@@ -29,7 +30,7 @@
             }
 
             function setDefaultItemLanguage() {
-                config.setItem('itemLanguage', 'en_GB');
+                config.setItem('locale', 'en_GB');
             }
         }
     }

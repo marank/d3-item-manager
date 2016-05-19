@@ -38,9 +38,9 @@
     }
 
     var all = [
-        {id: 1, name: "Cube: Weapons", filter: function(item) {return item.cube && item.cubeCategory === "Weapon";}},
-        {id: 2, name: "Cube: Armor", filter: function(item) {return item.cube && item.cubeCategory === "Armor";}},
-        {id: 3, name: "Cube: Jewelry", filter: function(item) { return item.cube && item.cubeCategory === "Jewelry"; }},
+        {id: 1, name: "Cube: Weapons", filter: function(item) {return item.cube && item.cubeCategory.toLowerCase() === "weapon";}},
+        {id: 2, name: "Cube: Armor", filter: function(item) {return item.cube && item.cubeCategory.toLowerCase() === "armor";}},
+        {id: 3, name: "Cube: Jewelry", filter: function(item) { return item.cube && item.cubeCategory.toLowerCase() === "jewelry"; }},
 
         {"class": "divider"},
 

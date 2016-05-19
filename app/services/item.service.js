@@ -11,8 +11,8 @@
         // TODO: don't load them new all the time
 
         function load() {
-            var locale = locales.currentItemLanguage().id;
-            return $http.get(`items/items_${locale}.json?${Date.now()}`).
+            var locale = locales.currentLocale().id;
+            return $http.get(`items/items_${locale}.json`, {cache: true}).
                 then(function(result) {
                     return result.data;
                 });

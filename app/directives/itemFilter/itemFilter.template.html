@@ -1,23 +1,23 @@
 <div class="well well-sm">
     <form class="form-inline">
         <div class="form-group">
-            <label for="search">Search item:</label>
+            <label for="search">{{vm.t('search.item')}}</label>
             <div class="btn-group">
                 <input class="form-control" type="text" id="search" ng-model="vm.filterValue">
                 <span id="searchclear" class="glyphicon glyphicon-remove-circle" ng-click="vm.clear()" ng-show="vm.showClear()"></span>
             </div>
         </div>
         <div class="form-group">
-            <label>Search over all items: </label>
-            <toggle-switch ng-model="vm.filterOverAll" on-label="Yes" off-label="No" class="switch-small"></toggle-switch>
+            <label>{{vm.t('search.all')}} </label>
+            <toggle-switch ng-model="vm.filterOverAll" on-label="{{vm.t('general.yes')}}" off-label="{{vm.t('general.no')}}" class="switch-small"></toggle-switch>
         </div>
         <div class="form-group">
-            <label>Only cubable items: </label>
-            <toggle-switch ng-model="vm.onlyCubable" on-label="Yes" off-label="No" class="switch-small"></toggle-switch>
+            <label>{{vm.t('search.cubable')}} </label>
+            <toggle-switch ng-model="vm.onlyCubable" on-label="{{vm.t('general.yes')}}" off-label="{{vm.t('general.no')}}" class="switch-small"></toggle-switch>
         </div>
         <div class="form-group">
-            <label>Hide cubed items: </label>
-            <toggle-switch ng-model="vm.hideCubed" on-label="Yes" off-label="No" class="switch-small"></toggle-switch>
+            <label>{{vm.t('search.hideCubed')}} </label>
+            <toggle-switch ng-model="vm.hideCubed" on-label="{{vm.t('general.yes')}}" off-label="{{vm.t('general.no')}}" class="switch-small"></toggle-switch>
         </div>
     </form>
 </div>

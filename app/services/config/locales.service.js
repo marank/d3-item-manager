@@ -3,17 +3,26 @@
 
     angular.module('d3-item-manager').factory('locales', locales);
 
-    var itemLanguageKey = 'itemLanguage';
+    var localeKey = 'locale';
+    var localizedStrings = [];
 
-    function locales(config) {
+    function locales(config, $http) {
+        var locale = currentLocale().id;
+        $http.get(`lang/${locale}.json`, {cache: true}).
+            then(function(result) {
+                localizedStrings = result.data;
+            });
+
         return {
             all,
-            currentItemLanguage, // TODO: rename to locale
-            setItemLanguageById
+            currentLocale,
+            setLocaleById,
+            t,
+            trans: t
         };
 
-        function currentItemLanguage(){
-            var id = config.getItem(itemLanguageKey, 'en_GB');
+        function currentLocale(){
+            var id = config.getItem(localeKey, 'en_GB');
             return _.find(allLocales, function(l) {return l.id === id;});
         }
 
@@ -21,8 +30,16 @@
             return allLocales;
         }
 
-        function setItemLanguageById(id){
-            config.setItem(itemLanguageKey, id);
+        function setLocaleById(id){
+            config.setItem(localeKey, id);
+            $http.get(`lang/${id}.json`).
+                then(function(result) {
+                    localizedStrings = result.data;
+                });
+        }
+
+        function t(key){
+            return localizedStrings[key];
         }
     }
 

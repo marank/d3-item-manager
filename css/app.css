@@ -1,0 +1,185 @@
+body {
+  padding-top: 70px;
+}
+.btn {
+  outline: none !important;
+}
+
+banner-alert {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 6px;
+  border-radius: 4px;
+}
+banner-alert.warning {
+  background-color: #F39C12;
+}
+banner-alert.warning i.fa:before {
+  content: "\f071";
+}
+banner-alert.error {
+  background-color: #E74C3C;
+}
+banner-alert.error i.fa:before {
+  content: "\f057";
+}
+banner-alert.success {
+  background-color: #00bc8c;
+}
+banner-alert.success i.fa:before {
+  content: "\f00c";
+}
+banner-alert.info {
+  background-color: #3498DB;
+}
+banner-alert.info i.fa:before {
+  content: "\f129";
+}
+banner-alert i.fa {
+  padding-top: 3px;
+}
+banner-alert i.fa:before {
+  padding-right: 12px;
+  padding-top: 6px;
+}
+banner-alert ng-transclude {
+  flex-grow: 1;
+}
+
+item-filter .form-group {
+  padding-right: 10px;
+}
+item-filter .form-group label {
+  padding-right: 5px;
+}
+item-filter .btn-group input.form-control {
+  height: 25px;
+  padding: 5px;
+}
+item-filter .btn-group #searchclear {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  height: 14px;
+  margin: auto;
+  font-size: 14px;
+  cursor: pointer;
+  color: #ccc;
+}
+item-filter .ats-switch {
+  outline: none !important;
+}
+
+.dropdown-menu li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #EBEBEB;
+  white-space: nowrap;
+}
+.dropdown-menu > div:last-child > li[role="separator"] {
+  display: none;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+new-features .no-language {
+  padding-top: 14px;
+}
+new-features .button-container {
+  margin-top: -6px;
+}
+
+.panel.about-panel {
+  width: 80%;
+  transform: translateX(10%);
+}
+
+.config-panel.panel-info {
+  width: 80%;
+  transform: translateX(10%);
+}
+.config-panel ul input.form-control {
+  width: 80%;
+}
+.config-panel i.text-danger {
+  transform: translateY(20%);
+}
+.config-panel button.dropdown-toggle {
+  margin-left: 10px;
+  padding: 2px 10px;
+}
+.config-panel .dropdown.open .dropdown-menu {
+  transform: translateY(8px);
+  margin-left: 10px;
+}
+.config-panel .backup-restore .btn {
+  width: 100px;
+  margin-right: 15px;
+}
+
+.table-kenais tbody tr:nth-of-type(6n+1),
+.table-kenais tbody tr:nth-of-type(6n+2),
+.table-kenais tbody tr:nth-of-type(6n+3) {
+  background-color: #3d3d3d;
+}
+.table-kenais tbody td.check:hover {
+  background-color: #464545;
+}
+.table-kenais tbody td.check.checked i.item-checked:before {
+  content: "\f00c";
+}
+i.season-small {
+  display: inline-block;
+  margin-left: 10px;
+  width: 15px;
+  height: 21px;
+  background: url("http://eu.battle.net/d3/static/images/profile/seasonal-leaf.png") -24px -2px no-repeat;
+  transform: translateY(5px);
+}
+i.bounty-cache {
+  display: inline-block;
+  margin-left: 10px;
+  width: 21px;
+  height: 21px;
+  background-image: url("../images/bounty.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  transform: translateY(5px);
+}
+i.crafted {
+  display: inline-block;
+  margin-left: 10px;
+  width: 21px;
+  height: 21px;
+  background-image: url("http://media.blizzard.com/d3/icons/items/large/crafting_looted_reagent_01_demonhunter_male.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  transform: translateY(5px);
+}
+table.table a.d3-link {
+  text-decoration: none;
+}
+table.table a.d3-link.orange {
+  color: #b4642f;
+}
+table.table a.d3-link.green {
+  color: #8bd442;
+}
+
+/*# sourceMappingURL=app.css.map */
